@@ -117,8 +117,8 @@ open class SwiftyPickerView: UIView {
         return window
     }
 
-    convenience public init(data: [[String]]) {
-        self.init(frame: CGRect.zero)
+    public init(data: [[String]]) {
+        super.init(frame: CGRect.zero)
         self.pickerData = data
         setup()
     }
